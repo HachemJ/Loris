@@ -181,3 +181,18 @@ msgstr "Date d'importation"
 
 msgid "Uploaded By"
 msgstr "Téléversé par"
+
+msgid "The CandID %s does not exist in the database."
+msgstr "Le CandID %s n'existe pas dans la base de données."
+
+msgid "Invalid PSCID %s for CandID %s. Check that you entered the correct PSCID and CandID."
+msgstr "PSCID invalide %s pour le CandID. Veuillez vérifier que les valeurs du PSCID et du CandID saisies sont correctes."
+
+msgid "Invalid Visit Label %s for CandID %s. Check that you entered the correct Visit Label and CandID."
+msgstr "Libellé de visite invalide %s pour le CandID %s. Veuillez vérifier que les valeurs du libellé de visite et du CandID saisies sont correctes."
+
+msgid "The candidate associated with CandID %s and PSCID %s is not active in the database."
+msgstr "Le candidat associé au CandID %s et au PSCID %s n'est pas actif dans la base de données."
+
+msgid "The session associated with CandID %s and Visit Label %s is not active in the database."
+msgstr "La session associée au CandID %s et au libellé de visite %s n'est pas active dans la base de données."

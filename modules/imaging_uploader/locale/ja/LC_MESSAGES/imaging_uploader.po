@@ -148,3 +148,17 @@ msgstr "アップロード日"
 msgid "Uploaded By"
 msgstr "アップロード者"
 
+msgid "The CandID %s does not exist in the database."
+msgstr "CandID %s はデータベースに存在しません。"
+
+msgid "Invalid PSCID %s for CandID %s. Check that you entered the correct PSCID and CandID."
+msgstr "CandID %s に対する PSCID %s は無効です。入力した PSCID と CandID が正しいことを確認してください。"
+
+msgid "Invalid Visit Label %s for CandID %s. Check that you entered the correct Visit Label and CandID."
+msgstr "CandID %s に対する訪問ラベル %s は無効です。入力した訪問ラベルと CandID が正しいことを確認してください。"
+
+msgid "The candidate associated with CandID %s and PSCID %s is not active in the database."
+msgstr "CandID %s と PSCID %s に関連付けられた候補者はデータベースでアクティブではありません。"
+
+msgid "The session associated with CandID %s and Visit Label %s is not active in the database."
+msgstr "CandID %s と訪問ラベル %s に関連付けられたセッションはデータベースでアクティブではありません。"

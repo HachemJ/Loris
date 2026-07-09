@@ -147,3 +147,18 @@ msgstr "上传日期"
 
 msgid "Uploaded By"
 msgstr "上传者"
+
+msgid "The CandID %s does not exist in the database."
+msgstr "CandID %s 不存在于数据库中。"
+
+msgid "Invalid PSCID %s for CandID %s. Check that you entered the correct PSCID and CandID."
+msgstr "CandID %s 的 PSCID %s 无效。请确认您输入的 PSCID 和 CandID 正确。"
+
+msgid "Invalid Visit Label %s for CandID %s. Check that you entered the correct Visit Label and CandID."
+msgstr "CandID %s 的访视标签 %s 无效。请确认您输入的访视标签和 CandID 正确。"
+
+msgid "The candidate associated with CandID %s and PSCID %s is not active in the database."
+msgstr "与 CandID %s 和 PSCID %s 关联的受试者在数据库中未处于活动状态。"
+
+msgid "The session associated with CandID %s and Visit Label %s is not active in the database."
+msgstr "与 CandID %s 和访视标签 %s 关联的会话在数据库中未处于活动状态。"

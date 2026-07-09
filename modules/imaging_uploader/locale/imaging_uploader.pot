@@ -148,3 +148,17 @@ msgstr ""
 msgid "Uploaded By"
 msgstr ""
 
+msgid "The CandID %s does not exist in the database."
+msgstr ""
+
+msgid "Invalid PSCID %s for CandID %s. Check that you entered the correct PSCID and CandID."
+msgstr ""
+
+msgid "Invalid Visit Label %s for CandID %s. Check that you entered the correct Visit Label and CandID."
+msgstr ""
+
+msgid "The candidate associated with CandID %s and PSCID %s is not active in the database."
+msgstr ""
+
+msgid "The session associated with CandID %s and Visit Label %s is not active in the database."
+msgstr ""

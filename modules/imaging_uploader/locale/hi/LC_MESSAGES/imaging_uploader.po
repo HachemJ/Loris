@@ -100,8 +100,8 @@ msgstr "अपलोड विफल: नेटवर्क त्रुटि �
 msgid "Please make sure files are not larger than {{maxFileSize}}"
 msgstr "कृपया सुनिश्चित करें कि फ़ाइलें {{maxFileSize}} से बड़ी न हों"
 
-msgid "Upload failed: received HTTP response code"
-msgstr "अपलोड विफल: HTTP प्रतिक्रिया कोड प्राप्त हुआ"
+msgid "Upload failed: received HTTP response {{code}}"
+msgstr "अपलोड विफल: HTTP प्रतिक्रिया {{code}} प्राप्त हुई।"
 
 msgid "Submission error!"
 msgstr "सबमिशन त्रुटि!"
@@ -147,3 +147,18 @@ msgstr "अपलोड की तिथि"
 
 msgid "Uploaded By"
 msgstr "द्वारा अपलोड किया गया"
+
+msgid "The CandID %s does not exist in the database."
+msgstr "CandID %s डेटाबेस में मौजूद नहीं है।"
+
+msgid "Invalid PSCID %s for CandID %s. Check that you entered the correct PSCID and CandID."
+msgstr "CandID %s के लिए PSCID %s अमान्य है। कृपया सुनिश्चित करें कि दर्ज किए गए PSCID और CandID सही हैं।"
+
+msgid "Invalid Visit Label %s for CandID %s. Check that you entered the correct Visit Label and CandID."
+msgstr "CandID %s के लिए विज़िट लेबल %s अमान्य है। कृपया सुनिश्चित करें कि दर्ज किया गया विज़िट लेबल और CandID सही हैं।"
+
+msgid "The candidate associated with CandID %s and PSCID %s is not active in the database."
+msgstr "CandID %s और PSCID %s से संबद्ध उम्मीदवार डेटाबेस में सक्रिय नहीं है।"
+
+msgid "The session associated with CandID %s and Visit Label %s is not active in the database."
+msgstr "CandID %s और विज़िट लेबल %s से संबद्ध सत्र डेटाबेस में सक्रिय नहीं है।"
