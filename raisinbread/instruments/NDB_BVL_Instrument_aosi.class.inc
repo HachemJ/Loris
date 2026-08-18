@@ -434,7 +434,7 @@ class NDB_BVL_Instrument_aosi extends NDB_BVL_Instrument
         );
         $this->addTextAreaElement(
             "q6_imitation_of_actions_notes",
-            "Notes: "
+            "Notes:"
         );
 
         $this->addTextAreaElement(
@@ -561,7 +561,7 @@ class NDB_BVL_Instrument_aosi extends NDB_BVL_Instrument
             else { $answerArray = $zeroOneTwo;
             }
             $this->addSelect($field, $label, $answerArray);
-            $this->addTextAreaElement("{$field}_notes", "Notes: ");
+            $this->addTextAreaElement("{$field}_notes", "Notes:");
 
         }
 
