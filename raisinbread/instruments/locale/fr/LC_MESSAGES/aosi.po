@@ -279,9 +279,8 @@ msgstr "3 = Ne montre pas de réponse"
 msgid "6. Imitation of Actions"
 msgstr "6. Imitation d'actions"
 
-#, fuzzy
-msgid "Activity 1"
-msgstr "Activité 1"
+msgid "Activity %s"
+msgstr "Activité %s"
 
 #, fuzzy
 msgid "0 = Clear imitation"
@@ -294,14 +293,6 @@ msgstr "1 = Imitation équivoque"
 #, fuzzy
 msgid "2 = Does not imitate"
 msgstr "2 = Ne fait pas d'imitation"
-
-#, fuzzy
-msgid "Activity 2"
-msgstr "Activité 2"
-
-#, fuzzy
-msgid "Activity 3"
-msgstr "Activité 3"
 
 #, fuzzy
 msgid "Score (calculated):"

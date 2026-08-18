@@ -140,7 +140,7 @@ class NDB_BVL_Instrument_mri_parameter_form extends NDB_BVL_Instrument
 
         $this->addSelect(
             'type_of_data',
-            'Type of Data:',
+            dgettext("mri_parameter_form", "Type of Data:"),
             $typesOfData
         );
         // Get Name and MRI Alias from sites table for select options
@@ -154,24 +154,36 @@ class NDB_BVL_Instrument_mri_parameter_form extends NDB_BVL_Instrument
         }
         $this->addSelect(
             'site',
-            'MRI Site Name:',
+            dgettext("mri_parameter_form", "MRI Site Name:"),
             $sites
         );
 
         $this->addLabel("Total Duration of Session");
         $this->addNumericElement(
             'total_duration_hours',
-            $this->indent . $this->indent . dgettext($this->name, 'Hours:')
+            $this->indent . $this->indent . dgettext($this->name,
+            dgettext(
+                "mri_parameter_form",
+                "Hours:")
+            )
         );
 
         $this->addNumericElement(
             'total_duration_minutes',
-            $this->indent . $this->indent . dgettext($this->name, 'Minutes:')
+            $this->indent . $this->indent . dgettext($this->name,
+            dgettext(
+                "mri_parameter_form",
+                "Minutes:"
+                )
+            )
         );
 
         $this->addBasicText(
             'mri_operator_name',
-            'MRI Operator Name:'
+            dgettext(
+                "instruments",
+                "MRI Operator Name:"
+            )
         );
 
         $scanDateOptions           = $this->dateOptions;
@@ -179,7 +191,10 @@ class NDB_BVL_Instrument_mri_parameter_form extends NDB_BVL_Instrument
 
         $this->addBasicDate(
             'scan_date',
-            "Scan Date:",
+            dgettext(
+                "mri_parameter_form",
+                "Scan Date:"
+            ),
             $scanDateOptions
         );
 

@@ -78,3 +78,12 @@ msgstr ""
 
 msgid "Examiner is required"
 msgstr ""
+
+msgid "Administration flag for %s"
+msgstr ""
+
+msgid "Data entry status for %s"
+msgstr ""
+
+msgid "Test validity for %s"
+msgstr ""

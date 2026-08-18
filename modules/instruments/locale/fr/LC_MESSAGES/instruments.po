@@ -83,3 +83,12 @@ msgstr "Examinateur•trice"
 
 msgid "Examiner is required"
 msgstr "Un examinateur est requis"
+
+msgid "Administration flag for %s"
+msgstr "Indicateur d'administration pour %s"
+
+msgid "Data entry status for %s"
+msgstr "Statut de saisie des données pour %s"
+
+msgid "Test validity for %s"
+msgstr "Validité du test pour %s"

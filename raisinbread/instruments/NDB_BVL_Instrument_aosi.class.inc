@@ -132,23 +132,29 @@ class NDB_BVL_Instrument_aosi extends NDB_BVL_Instrument
         );
         $this->addScoreColumn(
             "total_score_1_18",
-            "Total Score (Calculated) (items 1-18)"
+            dgettext("aosi", "Total Score (Calculated) (items 1-18)")
         );
         $this->addScoreColumn(
             "total_score_1_18_override",
-            "Total Score (Using Overrides) (items 1-18)"
+            dgettext("aosi", "Total Score (Using Overrides) (items 1-18)")
         );
         $this->addScoreColumn(
             "number_of_markers",
-            "Number of Markers (Calculated) (non-zero items, 1-18)"
+            dgettext(
+                "aosi",
+                "Number of Markers (Calculated) (non-zero items, 1-18)"
+            )
         );
         $this->addScoreColumn(
             "number_of_markers_override",
-            "Number of Markers (Using Overrides) (non-zero items, 1-18)"
+            dgettext(
+                "aosi",
+                "Number of Markers (Using Overrides) (non-zero items, 1-18)"
+            )
         );
         $this->addTextAreaElement(
             "other_comments",
-            "Comments about Validity:"
+            dgettext("aosi", "Comments about Validity:")
         );
         $this->XINRegisterRule(
             "other_comments",
@@ -161,14 +167,22 @@ class NDB_BVL_Instrument_aosi extends NDB_BVL_Instrument
         $this->addHeader("Item Administration");
 
         $this->addLabel(
-            "Please replace all Not Applicable entries
-            in presses for items 1, 2, 3, and 6."
+            dgettext(
+                "aosi",
+                "Please replace all Not Applicable entries in presses for"
+                . " items 1, 2, 3, and 6.")
         );
         $this->addLabel(
-            "They are invalid entries and will be removed."
+            dgettext(
+                "aosi",
+                "They are invalid entries and will be removed."
+            )
         );
         $this->addLabel(
-            "Not Applicable is valid for the override score."
+            dgettext(
+                "aosi", 
+                "Not Applicable is valid for the override score."
+            )
         );
 
         $q1_opts = array(
@@ -252,7 +266,7 @@ class NDB_BVL_Instrument_aosi extends NDB_BVL_Instrument
 
         $this->addTextAreaElement(
             "free_play_period_1_notes",
-            "Free Play Period 1 Notes:"
+            dgettext("aosi", "Free Play Period 1 Notes:")
         );
 
         //Question 3
@@ -390,7 +404,7 @@ class NDB_BVL_Instrument_aosi extends NDB_BVL_Instrument
             $this->form->addGroup(
                 $group,
                 "q6_imitation_of_actions_activity_{$activity}_group",
-                "Activity $activity",
+                sprintf(dgettext("aosi","Activity %s"), $activity),
                 null,
                 false
             );
@@ -425,7 +439,7 @@ class NDB_BVL_Instrument_aosi extends NDB_BVL_Instrument
 
         $this->addTextAreaElement(
             "free_play_period_2_notes",
-            "Free Play Period 2 Notes:"
+            dgettext("aosi", "Free Play Period 2 Notes:")
         );
 
     }
@@ -438,19 +452,58 @@ class NDB_BVL_Instrument_aosi extends NDB_BVL_Instrument
 
         //array of questions
         $questions = array(
-            "q7_social_babbling"                      => "7. Social babbling",
-            "q8_eye_contact"                          => "8. Eye contact",
-            "q9_reciprocal_social_smile"              => "9.Reciprocal social smile",
-            "q10_coordination_of_eye_gaze_and_action" => "10. Coordination of eye gaze and action",
-            "q11_reactivity"                          => "11. Reactivity",
-            "q14_social_interest"                     => "14. Social interest and shared affect",
-            "q15_transitions"                         => "15. Transitions",
-            "q16_motor_control_and_behaviour"         => "16. Motor control and behaviour",
-            "q17_atypical_motor"                      => "17. Atypical motor behaviours",
-            "q18_atypical_sensory"                    => "18. Atypical sensory behaviours",
-            "q19_engagement_of_attention"             => "19. Engagement of attention",
-            "q20_insistence_on_particular_objects"    => "20. Insistence on having or playing with particular objects",
-            "q21_social_referencing"                  => "21. Social Referencing",
+            "q7_social_babbling"                      => dgettext(
+                "aosi",
+                "7. Social babbling"
+            ),
+            "q8_eye_contact"                          => dgettext(
+                "aosi",
+                "8. Eye contact"
+            ),
+            "q9_reciprocal_social_smile"              => dgettext(
+                "aosi",
+                "9.Reciprocal social smile"
+            ),
+            "q10_coordination_of_eye_gaze_and_action" => dgettext(
+                "aosi",
+                "10. Coordination of eye gaze and action"
+            ),
+            "q11_reactivity"                          => dgettext(
+                "aosi",
+                "11. Reactivity"
+            ),
+            "q14_social_interest"                     => dgettext(
+                "aosi",
+                "14. Social interest and shared affect"
+            ),
+            "q15_transitions"                         => dgettext(
+                "aosi",
+                "15. Transitions"
+            ),
+            "q16_motor_control_and_behaviour"         => dgettext(
+                "aosi",
+                "16. Motor control and behaviour"
+            ),
+            "q17_atypical_motor"                      => dgettext(
+                "aosi",
+                "17. Atypical motor behaviours"
+            ),
+            "q18_atypical_sensory"                    => dgettext(
+                "aosi",
+                "18. Atypical sensory behaviours"
+            ),
+            "q19_engagement_of_attention"             => dgettext(
+                "aosi",
+                "19. Engagement of attention"
+            ),
+            "q20_insistence_on_particular_objects"    => dgettext(
+                "aosi",
+                "20. Insistence on having or playing with particular objects"
+            ),
+            "q21_social_referencing"                  => dgettext(
+                "aosi",
+                "21. Social Referencing"
+            ),
         );
         //answer arrays
         $zeroOneTwoThree = array(

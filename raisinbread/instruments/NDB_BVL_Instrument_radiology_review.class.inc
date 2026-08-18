@@ -82,7 +82,10 @@ class NDB_BVL_Instrument_radiology_review extends NDB_BVL_Instrument
         );
         $this->addSelect(
             'Scan_done',
-            'Was an MRI performed?',
+            dgettext(
+                "radiology_review",
+                'Was an MRI performed?'
+            ),
             $yes_no_option
         );
         $this->addLabel(
@@ -91,7 +94,10 @@ class NDB_BVL_Instrument_radiology_review extends NDB_BVL_Instrument
 
         $this->addDateElement(
             'MRI',
-            'Date of MRI acquisition'
+            dgettext(
+                "radiology_review",
+                'Date of MRI acquisition'
+            )
         );
 
         $this->XINRegisterRule(
@@ -102,7 +108,10 @@ class NDB_BVL_Instrument_radiology_review extends NDB_BVL_Instrument
         );
         $this->addDateElement(
             'Review',
-            'Date of local radiology review'
+            dgettext(
+                "radiology_review",
+                'Date of local radiology review'
+            )
         );
         $this->XINRegisterRule(
             "Review_date",
@@ -124,7 +133,10 @@ class NDB_BVL_Instrument_radiology_review extends NDB_BVL_Instrument
 
         $this->addSelect(
             'abnormal_atypical_exclusionary',
-            $this->indent . "If the results are ABNORMAL or ATYPICAL:",
+            $this->indent . dgettext(
+                "radiology_review",
+                "If the results are ABNORMAL or ATYPICAL:"
+            ),
             $exclusionaryOrNot
         );
 
@@ -141,7 +153,10 @@ class NDB_BVL_Instrument_radiology_review extends NDB_BVL_Instrument
         $this->addTextAreaElement(
             'Incidental_findings',
             $this->indent . $this->indent .
-            'Description of incidental findings:',
+            dgettext(
+                "radiology_review",
+                "Description of incidental findings:"
+            ),
             ["Review_results{@}=={@}abnormal"],
             "Please describe the abnormality"
         );

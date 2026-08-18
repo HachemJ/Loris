@@ -211,7 +211,7 @@ msgstr ""
 msgid "6. Imitation of Actions"
 msgstr ""
 
-msgid "Activity 1"
+msgid "Activity %s"
 msgstr ""
 
 msgid "0 = Clear imitation"
@@ -221,12 +221,6 @@ msgid "1 = Equivocal imitation"
 msgstr ""
 
 msgid "2 = Does not imitate"
-msgstr ""
-
-msgid "Activity 2"
-msgstr ""
-
-msgid "Activity 3"
 msgstr ""
 
 msgid "Score (calculated):"

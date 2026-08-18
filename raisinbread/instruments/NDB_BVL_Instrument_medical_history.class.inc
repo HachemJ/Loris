@@ -135,7 +135,7 @@ class NDB_BVL_Instrument_medical_history extends NDB_BVL_Instrument
 
         $this->addSelect(
             "arthritis",
-            "1. Do you have any type of arthritis?",
+            dgettext("medical_history", "1. Do you have any type of arthritis?"),
             $yesNoOptions
         );
 
@@ -166,7 +166,11 @@ class NDB_BVL_Instrument_medical_history extends NDB_BVL_Instrument
 
         $this->addSelect(
             "pulmonary_issues",
-            "2. Do you currently have, or have you ever had any pulmonary issues?",
+            dgettext(
+                "medical_history",
+                "2. Do you currently have, or have you ever had any pulmonary"
+                . " issues?"
+            ),
             $yesNoOptions
         );
 
@@ -206,15 +210,15 @@ class NDB_BVL_Instrument_medical_history extends NDB_BVL_Instrument
 
         $this->addSelect(
             "hypertension",
-            "7. Do you have hypertension?",
+            dgettext("medical_history", "7. Do you have hypertension?"),
             $yesNoOptions
         );
 
         $this->addSelect(
             "hypertension_while_pregnant",
             "$this->indent $this->indent" .
-            "If YES + FEMALE, were you pregnant " .
-            "when you were diagnosed with hypertension?",
+            dgettext("medical_history", "If YES + FEMALE, were you pregnant"
+            . " when you were diagnosed with hypertension?"),
             $yesNoOptions
         );
 
@@ -305,7 +309,7 @@ class NDB_BVL_Instrument_medical_history extends NDB_BVL_Instrument
 
             $group[] = $this->createSelect(
                 "concussion_" . $i . "_hospitalized",
-                "Hospitalized?",
+                dgettext("medical_history", "Hospitalized?"),
                 $yesNoOptions
             );
 
@@ -347,8 +351,8 @@ class NDB_BVL_Instrument_medical_history extends NDB_BVL_Instrument
         $this->addSelect(
             "current_concussion_symptoms",
             "$this->indent" .
-            "d) Are you currently experiencing any problems " .
-            "that you think might be related to a concussion?",
+            dgettext("medical_history", "d) Are you currently experiencing any"
+            . " problems that you think might be related to a concussion?"),
             $concussionOptions,
             array('multiple')
         );

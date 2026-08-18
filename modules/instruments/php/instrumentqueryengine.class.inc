@@ -83,7 +83,13 @@ class InstrumentQueryEngine implements \LORIS\Data\Query\QueryEngine
                 $fields = [
                     new DictionaryItem(
                         $inst->testName.'_Administration',
-                        'Administration flag for ' . $inst->getFullName(),
+                        sprintf(
+                            dgettext(
+                                "instruments",
+                                "Administration flag for %s"
+                            ),
+                            $inst->getFullName()
+                        ),
                         $scope,
                         $adminoptions,
                         $cardinality,
@@ -91,7 +97,13 @@ class InstrumentQueryEngine implements \LORIS\Data\Query\QueryEngine
                     ),
                     new DictionaryItem(
                         $inst->testName.'_Data_entry',
-                        'Data entry status for ' . $inst->getFullName(),
+                        sprintf(
+                            dgettext(
+                                "instruments",
+                                "Data entry status for %s"
+                            ),
+                            $inst->getFullName()
+                        ),
                         $scope,
                         $dataentryoptions,
                         $cardinality,
@@ -101,7 +113,13 @@ class InstrumentQueryEngine implements \LORIS\Data\Query\QueryEngine
                 if ($inst->ValidityEnabled) {
                             $fields[] =    new DictionaryItem(
                                 $inst->testName.'_Validity',
-                                'Test validity for ' . $inst->getFullName(),
+                                sprintf(
+                                    dgettext(
+                                        "instruments",
+                                        "Test validity for %s"
+                                    ),
+                                    $inst->getFullName()
+                                ),
                                 $scope,
                                 $validityoptions,
                                 $cardinality,

@@ -513,8 +513,7 @@ class NDB_BVL_Instrument_LINST extends \NDB_BVL_Instrument
                                         $this->testName.'_Window_Difference',
                                         dgettext(
                                             "instruments",
-                                            'Window difference from test " .
-					    "battery (days)'
+                                            "Window Difference (+/- Days)"
                                         ),
                                         $scope,
                                         new \LORIS\Data\Types\Duration(),
