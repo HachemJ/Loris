@@ -589,7 +589,7 @@ class NDB_Page extends \LORIS\Http\Endpoint implements
         return $this->form->createElement(
             "select",
             $field,
-            dgettext($this->name, $label),
+            !empty($label) ? dgettext($this->name, $label) : '',
             $options,
             $attribs
         );
