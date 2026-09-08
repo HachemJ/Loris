@@ -97,8 +97,8 @@ class Login extends Component {
         .then((resp) => {
           if (!resp.ok) {
             this.setState({
-              resetTokenError: t('Your password reset token is invalid or has'
-                + ' expired. Please request a new password reset link.',
+              resetTokenError: this.props.t('Your password reset token is invalid'
+                + ' or has expired. Please request a new password reset link.',
                 {ns: 'login'}),
             });
             return null;
