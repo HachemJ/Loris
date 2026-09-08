@@ -168,3 +168,6 @@ msgstr ""
 
 msgid "Value"
 msgstr ""
+
+msgid "Your password reset token is invalid or has expired. Please request a new password reset link."
+msgstr ""

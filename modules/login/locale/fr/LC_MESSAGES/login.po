@@ -192,3 +192,6 @@ msgstr "Statistique"
 
 msgid "Value"
 msgstr "Valeur"
+
+msgid "Your password reset token is invalid or has expired. Please request a new password reset link."
+msgstr "Votre jeton de réinitialisation du mot de passe est invalide ou a expiré. Veuillez demander un nouveau lien de réinitialisation du mot de passe."
